@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .info { display: none; height: 42px; }
+            body {background-color:#008ddf; color:white; font-size: 1.5em; text-shadow: black 1px 1px;}
+            footer {font-size: smaller;}
+        </style>
+    </head>
+    <body>
+        <h1>Sound Board Settings</h1>
+        <h2 class='header' id="powerUp"">Power Up</h2>
+        <div class='info' id="paraUp" onclick="hideUp()">
+            <p>
+            When you are preparing for a service, use these steps to assure all devices you will need
+            have power.
+            <ul>
+                <li>Power on the surge protector on the floor under the board.<br>This powers the 
+                sound board, wireless receivers, USB recorder, CD and tape player.</li>
+                <li>Check for lights on
+                    <ul>
+                        <li>the surge protector</li>
+                        <li>the both amplifiers to the right of the surge protector</li>
+                        <li>the CD player</li>
+                        <li>the USB recorder</li>
+                        <li>the all wireless receivers on the wire rack above the amplifiers</li>
+                    </ul>
+                </li>
+                <li>Make sure all channels are muted</li>
+                <li><em>Master L</em> is at level 0</li>
+                <li><em>Master R</em> is at level -30</li>
+                <li><em>Mon 1</em> is at level 0</li>
+                <li><em>Mon2</em> is at level 0</li>
+                <li>Put the USB drive in the USB recorder
+                    <ul>
+                        <li>Press the record button to prepare recording </li>
+                        <li>The display should change to "Preparing"</li>
+                        <li>After preparing the record light should start blinking<br>
+                        This means the recorder will begin recording when the "record" button is 
+                        pressed</li>
+                        <li>When the record button is pressed the display light should be on solid 
+                            and the display counter should increment each second to show it is 
+                            recording
+                        </li>
+                        <li>To stop the recording
+                            <ul>
+                                <li>Press the stop button on the recorder</li>
+                                <li><span style="color: red;">Wait</span> for "Finalizing" to disappear from the display</li>
+                                <li>Remove the USB drive</li>
+                                <li>Place the USB drive in the PC for processing</li>
+                            </ul>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+        </div>
+        <h2 class='header' id="powerDown"">Power Down</h2>
+        <div class='info' id="paraDown">
+            <p>
+            When the service ends, follow these steps to properly power down the sound equipment
+            <ul>
+                <li>Make sure the USB recording has ended
+                    <ul>
+                        <li>The record light should be off - press the stop button if it is still 
+                            recording</li>
+                        <li>Make sure the display does not show "Finalizing" - if so, wait until 
+                            "Finalizing" disappears from the display</li>
+                        <li>Remove the USB drive from the recorder</li>
+                        <li>Place the USB drive in the PC for processing</li>
+                    </ul>
+                </li>
+                <li>Make sure all channels are muted</li>
+                <li><em>Master L</em> is at level 0</li>
+                <li><em>Master R</em> is at level -30</li>
+                <li><em>Mon 1</em> is at level 0</li>
+                <li><em>Mon2</em> is at level 0</li>
+                <li>Power off the surge protector on the floor under the board</li>
+            </ul>
+        </p>
+        </div>
+        <h2 class='header' id="playCD"">Playing a CD</h2>
+        <div class='info' id="paraPlayCD"">
+        <p>
+            CDs are played in the Denon device on your right. Insert the disc. If it starts playing,
+            press the pause button.
+            <ul>
+                <li>Make sure the A/B switch between the PC and sound board is in the "B" position</li>
+                <li>Select the track you want to play using the track forward/backward buttons (you
+                    can use the remote or the front panel)</li>
+                <li><em>Channel 8?</em> unmuted - use slider to adjust volume (this is the music 
+                side of a split-track CD)</li>
+                <li>If the CD is split-track, leave track 7? muted.</li>
+                <li>Unmute the channels for each microphone that will be used</li>
+                <li>Mute all other channels</li>
+                <li><em>Master L</em> is at level 0</li>
+                <li><em>Master R</em> is at level 0</li>
+                <li><em>Mon 1</em> is at level 0</li>
+                <li><em>Mon2</em> is at level 0</li>
+                <li>After playing the song(s) move <em>Mon2</em> back to level -30</li>
+            </ul>
+        </p>
+        </div>
+        <h2 class='header' id="preach"">Pastor is preaching</h2>
+        <div class='info' id="paraPreach"">
+            <p>
+                When the pastor is preaching here are the sound board settings.
+                <ul>
+                    <li><em>Channel 2</em> unmuted - use slider to adjust volume</li>
+                    <li>All other channels muted</li>
+                    <li><em>Master L</em> is at level 0</li>
+                    <li><em>Master R</em> is at level -30</li>
+                    <li><em>Mon 1</em> is at level 0</li>
+                    <li><em>Mon2</em> is at level 0</li>
+                </ul>
+            </p>
+        </div>
+        <h2 class='header' id="noSound"">No sound</h2>
+        <div class='info' id="noSound"">
+            <p>
+                When you unmute a channel and there is on sound in the sanctuary
+                <ul>
+                    <li>Make sure the mute light is off for that channel</li>
+                    <li>If it's a wireless mic - make sure the power is on (check the wireless receiver 
+                        on the wire rack to the right of the window; each channel there is color coded 
+                        and the green light to the left of the channel number should be lit
+                    </li>
+                    <li>The slider should be between -12 & +6 - slide it to -12, then slowly increase
+                        until you reach +6; If there is still no sound, bring it back down to -6</li>
+                    <li>Check for sound board lights when channel has some input (someeone talking into
+                        a mic, CD player is playing, etc.) - if not sound is not getting to the board; 
+                        check both ends of the line input connected to that channel</li>
+                    <li><em>Make sure Master L</em> is at level 0</li>
+                    <li><em>Make sure Master R</em> is at level -30</li>
+                    <li><em>Mon 1</em> is at level 0</li>
+                    <li><em>Mon2</em> is at level 0</li>
+                    <li>Slowly bring up Master R to level 0 while testing; reset to -30 when complete</li>
+                    <li>Make sure both amplifiers are powered on (on floor to right of main surge 
+                        protector)</li>
+                </ul>
+            </p>
+        </div>
+        <footer>Click a task to display the details<br>Click the task or details to hide the details</footer>
+        <script>
+            var tasks = document.querySelectorAll('.header')
+            var details = document.querySelectorAll('.info')
+            for(let i=0; i<tasks.length; i++) {
+                console.log(`Running for loop - value = ${i}`)
+                tasks[i].addEventListener('click', function(){
+                    let state = details[i].style.display
+                    console.log(`upClick processing - state = ${state}`)
+                    if(state == 'inline')
+                        details[i].style.display = "none";
+                    else
+                        details[i].style.display = "inline";
+                    state = details[i].style.display
+                    console.log(`upClick processing - state = ${state}`)
+                })
+                details[i].addEventListener('click', function(){
+                        details[i].style.display = "none";
+                })
+            }
+        </script>
+
+    </body>
+</html>
